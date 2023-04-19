@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Recommendation System</title>
+</head>
+<body>
+    <h1>Flight Recommendation System</h1>
+    <p>Recommended flights:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Flight</th>
+                <th>Description</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, row in recommended_flights.iterrows() %}
+                <tr>
+                    <td>{{ row['Flight'] }}</td>
+                    <td>{{ row['Description'] }}</td>
+                    <td>{{ row['Rating'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

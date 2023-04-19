@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Recommendation System</title>
+</head>
+<body>
+    <h1>Flight Recommendation System</h1>
+    <form action="/recommend" method="POST">
+        <label for="user_input">Enter a description(between 0 and 5):</label>
+        <input type="text" id="user_input" name="user_input" min="0" max="5" step="0.1" required>
+        <br><br>
+        <label for="user_rating">Enter a rating for a flight (between 0 and 5):</label>
+        <input type="number" id="user_rating" name="user_rating" min="0" max="5" step="0.1" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
